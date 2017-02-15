@@ -1,19 +1,17 @@
 body {
+    width: 1600px;
     background-color: cyan;
     font-family: 'Lato', serif;
+    margin: 0 auto;
 }
 
 div.header {
     margin: 0 auto;
     padding: 0;
-    background: beige url('../assets/headers-oscar-guy.jpg');
+    background: beige url('../assets/header/headers-oscar-guy.jpg');
     height: 565px;
-    width: 1600px;
 }
 
-/*
-    min-height плох для пиксел-перфекта
-*/
 div.header div.info {
     color: white;
     background: rgba(73,72,68,0.5);
@@ -21,7 +19,6 @@ div.header div.info {
     height: 213px;
     top: 352px;
 }
-
 
 div.header .title,
 div.header .text,
@@ -33,6 +30,7 @@ div.header .ui {
 div.header .title {
     
 }
+
 div.header .title p {
     padding: 0;
     margin: 0;
@@ -40,17 +38,33 @@ div.header .title p {
     font-weight: bold;
 }
 
-
-
 div.header .text p {
     padding: 0;
     margin: 0;
-    font-family: 'Lato light';
+    font-weight: lighter;
     font-size: 30px;
     z-index: 100;
     opacity: 1;
 }
 
-div.ui {
+div.header div.ui {
     min-height: 60px;
+    display: inline;
+}
+
+div.header .account-buttons {
+    height: 63px;
+}
+
+
+
+div.header a {
+    margin: 0;
+    padding: 0;
+}
+
+div.header a span{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
 }
