@@ -1,0 +1,53 @@
+body {
+    background-color: cyan;
+    font-family: 'Lato', serif;
+}
+
+div.header {
+    margin: 0 auto;
+    padding: 0;
+    background: beige url('/assets/headers-oscar-guy.jpg');
+    height: 565px;
+    width: 1600px;
+}
+
+/*
+    min-height плох для пиксел-перфекта
+*/
+div.header div.info {
+    background-color: #494844;
+    opacity: 0.5;
+    position: relative;
+    height: 213px;
+    top: 352px;
+}
+
+
+div.header .title,
+div.header .text,
+div.header .ui {
+    padding: 0px 300px;
+}
+
+div.header .title {
+    
+}
+div.header .title p {
+    padding: 0;
+    margin: 0;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+
+div.header .text p {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato light';
+    font-size: 30px;
+}
+
+div.ui {
+    min-height: 60px;
+}
