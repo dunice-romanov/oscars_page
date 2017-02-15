@@ -6,7 +6,7 @@ body {
 div.header {
     margin: 0 auto;
     padding: 0;
-    background: beige url('/assets/headers-oscar-guy.jpg');
+    background: beige url('../assets/headers-oscar-guy.jpg');
     height: 565px;
     width: 1600px;
 }
@@ -15,8 +15,8 @@ div.header {
     min-height плох для пиксел-перфекта
 */
 div.header div.info {
-    background-color: #494844;
-    opacity: 0.5;
+    color: white;
+    background: rgba(73,72,68,0.5);
     position: relative;
     height: 213px;
     top: 352px;
@@ -27,6 +27,7 @@ div.header .title,
 div.header .text,
 div.header .ui {
     padding: 0px 300px;
+    opacity: 1;
 }
 
 div.header .title {
@@ -46,6 +47,8 @@ div.header .text p {
     margin: 0;
     font-family: 'Lato light';
     font-size: 30px;
+    z-index: 100;
+    opacity: 1;
 }
 
 div.ui {
