@@ -263,7 +263,6 @@ div.content div.article div.buttons a{
 
 div.content div.article div.buttons div{
     margin-left: 18px;
-    display: inline;
 }
 
 
@@ -275,9 +274,11 @@ div.content div.article .info div.publisher span{
 }
 
 div.content div.comments {
-    position: absolute;
 }
 
+div.content div.commentary {
+    position: static;
+}
 
 /*
 div.content div.comments div.comment-text div.name,
@@ -291,20 +292,27 @@ div.content div.comments div.comment-text{
 div.content div.comments div.avatar {
     float: left;
     margin-right: 21px;
-    margin-right: 21px;
 }
 div.content div.comments div.comment-text {
-    float:left;
-    max-width: 40%;
+    display: inline-block;
+    width: 85%;
 }
 
 
 div.content div.comments div.comment-text div.name {
     font-weight: bold;
+    left: 100px;
+    top: 0;
 }
-div.content div.comments div.name,
-div.content div.comments div.timecode {
+
+div.content div.comments div.timecode,
+div.content div.comments div.name {
     display: inline-block;
+}
+
+div.content div.comments div.timecode {
+    top: 0;
+    
 }
 
 div.content div.comments div.name {
@@ -321,10 +329,15 @@ div.content div.comments div.timecode {
 }
 
 div.content div.comments div.text {
+    
 }
+
+/*
 
 .clearfix {
     display: table;
     content: "";
     clear: both;
+    border: 1px dashed black;
 }
+*/
