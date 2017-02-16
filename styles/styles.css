@@ -1,7 +1,7 @@
 body {
     width: 1600px;
     background-color: cyan;
-    font-family: 'lato-light', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0 auto;
 }
 
@@ -9,12 +9,15 @@ a {
     text-decoration: none;
     color: black;
 }
+
+.static {
+    position: static;
+}
 .margin-right {
     margin-left: 0px;
 }
 div.header {
     margin: 0 auto;
-    padding: 0;
     background: beige url('../assets/header/headers-oscar-guy.jpg');
     height: 565px;
 }
@@ -51,45 +54,37 @@ div.header .ui {
 
 div.header .title {
     padding-top: 5px;
-    height: 60px;
+    font-weight: bold;
+    font-size: 60px;
+    letter-spacing: -1px;
 }
 
 div.header .text {
-    font-weight: 100;
+    font-weight: lighter;
+    word-spacing: 2px;
+    line-height: 2.5em;
     margin-left: 10px;
-    margin-top: 15px;
-    height: 70px;
+    margin-bottom: 20px;
 }
 
 div.header .title p {
     padding: 0;
-    margin: 0;
-    font-size: 60px;
-    font-weight: bold;
-    word-spacing: -5px;
+    margin: 0;   
 }
 
-div.header div.ui {
-    padding-top: 30px;
-}
 
 div.header .text p {
     width: 780px;
     padding: 0;
     margin: 0;
-    font-weight: 30;
     font-size: 30px;
 }
 
-/*
-    тут есть минус
-*/
 div.header .account-info {
-    margin-top: -5px;
-    margin-left: 7px;
     font-weight: lighter;
     float: left;
     vertical-align: middle;
+    margin-left: 7px;
 }
 
 div.header .account-info span, 
@@ -104,44 +99,50 @@ div.header .account-info img {
 }
 
 div.header .account-info span {
-    margin-left: 11px;
+    letter-spacing: 0;
+    margin-left: 10px;
+    word-spacing: 2px;
 }
 
 div.header .account-info span:last-child {
-    margin-left: 0;
+    padding-left: 10px;
+    
 }
 div.header .account-info span:last-child {
     margin-left: 30px;
-    word-spacing: 2px;
 }
 
 
 div.header a {
-    margin: 0;
     padding: 0;
-    margin-left: 30px;
+    margin-left: 28px;
     text-decoration: none;
 }
 
 
 div.header div.account-buttons span, 
 div.header div.account-buttons img {
+    margin-top: 2px;
     vertical-align: middle;
 }
 
 div.header a span {
     font-size: 14px;
     color: white;
-    margin-left: 8px;
+    margin-left: 0px;
 }
 
-div.header a:first-child {
+div.header div.account-buttons a:first-child {
     margin-left: 270px;
 }
 div.header a:last-child {
     margin-left: 20px;
 }
 
+div.header div.account-buttons img {
+    margin-right: 9px;
+    
+}
 
 /*
     CONTENT
@@ -166,6 +167,7 @@ div.content .show-item {
 div.content .show-item span {
     text-transform: uppercase;
     color: #7394a7;
+    word-spacing: -1px;
     font-size: 16px;
     margin: 23px;
 }
@@ -179,45 +181,62 @@ div.content div.articles {
 }
 
 div.content div.article {
-    margin-bottom: 78px;
+    
+    margin-bottom: 115px;
 }
 
 div.content div.article .title p{
     margin: 0;
-    
-    word-spacing: 2px;
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 div.content div.article .asset,
 div.content div.article .three-assets {
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     
 }
 
 div.content div.article .asset img {
     border-radius: 3px;
-    padding: 12px;
+    padding: 0px;
+}
+
+div.content div.article .three-assets {
 }
 
 div.content div.article .three-assets img{
     margin-right: 8px;
 }
+div.content div.article .three-assets img:last-child {
+    margin-right: -1px;
+    
+}
 
 div.content div.article .text p{
     margin: 0;
     font-size: 18px;
-    margin-bottom: 30px;
-    line-height: 1.6;
+    margin-bottom: 27px;
+    line-height: 30px;
     word-spacing: 1px;
 }
 
-div.content div.article .info {
+div.content div.article div.info {
+    height: 23px;
+}
+
+div.content div.article div.buttons div,
+div.content div.article .info .publisher {
+    display: inline-block;
+    float: left;
+}
+
+div.content div.article .info .publisher{
     vertical-align: middle;
     margin-left: 1px;
+    margin-right: 50px;
 }
 
 div.content div.article .border {
@@ -225,15 +244,15 @@ div.content div.article .border {
     background-color: #f6f6f6;
 }
 
-div.content div.article .info img {
-    display: inline-block;
+div.content div.article .info .publisher img {
     border-radius: 1px;
-    margin-right: 1px;
+    margin-right: 5px;
+    margin-left: 1px;
 }
 
-div.content div.article .info .publisher{
-    float: left;
-   
+
+div.content div.article .info div.publisher span{
+    margin-left: 0;
 }
 
 div.content div.article .info span,
@@ -242,67 +261,49 @@ div.content div.article div.buttons{
     color: #828282;
 }
 
+div.content div.article div.buttons div{
+    margin-left: 20px;
+}
 
  div.content div.article .info span {
-    margin-right: 40px;
+    margin-right: 10px;
     
 }
 
-
-div.content div.article div.buttons {
-    float: right;
+div.content div.article div.buttons span.likes-dislikes {
+    margin: 0 4px;
 }
 
-div.content div.article div.publisher span {
-    margin-right: 0;
-}
-
-div.content div.article div.buttons a{
-    
-}
-
-div.content div.article div.buttons div{
-    margin-left: 18px;
+div.content div.article div.buttons a {
+    font-size: 14px;
 }
 
 
 div.content div.article div.buttons div:first-child {
     margin-left: 0;
 }
-div.content div.article .info div.publisher span{
-    margin-left: 0;
-}
 
 div.content div.comments {
 }
 
-div.content div.commentary {
+div.content div.comments div.commentary {
     position: static;
+    margin-bottom: 65px;
 }
 
-/*
-div.content div.comments div.comment-text div.name,
-div.content div.comments div.timecode,
-div.content div.comments div.text,
-div.content div.comments div.reply,
-div.content div.comments div.comment-text{
-    position: relative;
-}
-*/
 div.content div.comments div.avatar {
-    float: left;
+    display: inline-block;
     margin-right: 21px;
+    margin-left: -1px;
+    vertical-align: top;
 }
 div.content div.comments div.comment-text {
     display: inline-block;
     width: 85%;
 }
 
-
 div.content div.comments div.comment-text div.name {
     font-weight: bold;
-    left: 100px;
-    top: 0;
 }
 
 div.content div.comments div.timecode,
@@ -311,28 +312,39 @@ div.content div.comments div.name {
 }
 
 div.content div.comments div.timecode {
-    top: 0;
+    margin-left: 15px;
     
 }
 
-div.content div.comments div.name {
-    margin-bottom: 14px;
+div.content div.commentary div.reply a{
+    color: #0d50a7;
 }
 
-div.content div.comments div.reply {
-    margin-bottom: 70px;
-}
-
-div.content div.comments div.timecode {
+div.content div.commentary div.timecode {
     font-size: 14px;
     color: #90919d;
 }
 
-div.content div.comments div.text {
-    
+
+div.content div.comments div.replies h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #b2b2b2; 
+    line-height: 0.1em; 
+    margin: 20px 0 10px;
+    margin-bottom: 75px;
+
 }
 
-/*
+div.content div.comments .replies span {
+    color: #b2b2b2;
+    font-style: normal;
+    padding: 0 20px;
+    background-color: white;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
 
 .clearfix {
     display: table;
@@ -340,4 +352,3 @@ div.content div.comments div.text {
     clear: both;
     border: 1px dashed black;
 }
-*/
