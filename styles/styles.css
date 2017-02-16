@@ -1,10 +1,17 @@
 body {
     width: 1600px;
     background-color: cyan;
-    font-family: 'Lato', sans-serif;
+    font-family: 'lato-light', sans-serif;
     margin: 0 auto;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+.margin-right {
+    margin-left: 0px;
+}
 div.header {
     margin: 0 auto;
     padding: 0;
@@ -48,7 +55,7 @@ div.header .title {
 }
 
 div.header .text {
-    font-weight: lighter;
+    font-weight: 100;
     margin-left: 10px;
     margin-top: 15px;
     height: 70px;
@@ -67,7 +74,7 @@ div.header div.ui {
 }
 
 div.header .text p {
-    width: 730px;
+    width: 780px;
     padding: 0;
     margin: 0;
     font-weight: 30;
@@ -100,6 +107,9 @@ div.header .account-info span {
     margin-left: 11px;
 }
 
+div.header .account-info span:last-child {
+    margin-left: 0;
+}
 div.header .account-info span:last-child {
     margin-left: 30px;
     word-spacing: 2px;
@@ -162,22 +172,47 @@ div.content .show-item span {
 
 div.content div.articles {
     margin: 0 auto;
-    height: 400px;
     padding: 0 400px;
     color: black;
     background-color: white;
     padding-top: 40px;
 }
 
-div.content div.article .title {
+div.content div.article {
+    margin-bottom: 78px;
+}
+
+div.content div.article .title p{
+    margin: 0;
+    
+    word-spacing: 2px;
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 25px;
 }
 
-div.content div.article .text {
+div.content div.article .asset,
+div.content div.article .three-assets {
+    text-align: center;
+    margin-bottom: 35px;
+    
+}
+
+div.content div.article .asset img {
+    border-radius: 3px;
+    padding: 12px;
+}
+
+div.content div.article .three-assets img{
+    margin-right: 8px;
+}
+
+div.content div.article .text p{
+    margin: 0;
     font-size: 18px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    word-spacing: 1px;
 }
 
 div.content div.article .info {
@@ -185,14 +220,111 @@ div.content div.article .info {
     margin-left: 1px;
 }
 
-div.content div.article img {
-    display: inline-block;
+div.content div.article .border {
     border-radius: 1px;
-    margin-right: 5px;
+    background-color: #f6f6f6;
 }
 
- div.content div.article span {
-    margin-right: 40px;
+div.content div.article .info img {
+    display: inline-block;
+    border-radius: 1px;
+    margin-right: 1px;
+}
+
+div.content div.article .info .publisher{
+    float: left;
+   
+}
+
+div.content div.article .info span,
+div.content div.article div.buttons a,
+div.content div.article div.buttons{
     color: #828282;
 }
 
+
+ div.content div.article .info span {
+    margin-right: 40px;
+    
+}
+
+
+div.content div.article div.buttons {
+    float: right;
+}
+
+div.content div.article div.publisher span {
+    margin-right: 0;
+}
+
+div.content div.article div.buttons a{
+    
+}
+
+div.content div.article div.buttons div{
+    margin-left: 18px;
+    display: inline;
+}
+
+
+div.content div.article div.buttons div:first-child {
+    margin-left: 0;
+}
+div.content div.article .info div.publisher span{
+    margin-left: 0;
+}
+
+div.content div.comments {
+    position: absolute;
+}
+
+
+/*
+div.content div.comments div.comment-text div.name,
+div.content div.comments div.timecode,
+div.content div.comments div.text,
+div.content div.comments div.reply,
+div.content div.comments div.comment-text{
+    position: relative;
+}
+*/
+div.content div.comments div.avatar {
+    float: left;
+    margin-right: 21px;
+    margin-right: 21px;
+}
+div.content div.comments div.comment-text {
+    float:left;
+    max-width: 40%;
+}
+
+
+div.content div.comments div.comment-text div.name {
+    font-weight: bold;
+}
+div.content div.comments div.name,
+div.content div.comments div.timecode {
+    display: inline-block;
+}
+
+div.content div.comments div.name {
+    margin-bottom: 14px;
+}
+
+div.content div.comments div.reply {
+    margin-bottom: 70px;
+}
+
+div.content div.comments div.timecode {
+    font-size: 14px;
+    color: #90919d;
+}
+
+div.content div.comments div.text {
+}
+
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+}
