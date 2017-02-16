@@ -12,12 +12,28 @@ div.header {
     height: 565px;
 }
 
+
 div.header div.info {
     color: white;
     background: rgba(73,72,68,0.5);
     position: relative;
     height: 211px;
     top: 352px;
+}
+
+div.header div.author {
+    margin-top: 25px;
+    margin-right: 300px;
+    float: right;
+    color: white;
+    font-size: 14px;
+}
+
+div.header div.author a {
+    color: white;
+    text-decoration: underline;
+    padding: 0;
+    margin: 0;
 }
 
 div.header .title,
@@ -89,9 +105,6 @@ div.header .account-info span:last-child {
     word-spacing: 2px;
 }
 
-div.header .account-buttons a{
-    
-}
 
 div.header a {
     margin: 0;
@@ -113,7 +126,7 @@ div.header a span {
 }
 
 div.header a:first-child {
-    margin-left: 271px;
+    margin-left: 270px;
 }
 div.header a:last-child {
     margin-left: 20px;
