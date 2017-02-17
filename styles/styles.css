@@ -152,8 +152,9 @@ a {
     font-size: 16px;
 }
 
-.font-style-tip {
-    font
+.font-style-footer-tip {
+    font-size: 20px;
+    color: #8491bd;
 }
 
 /*
@@ -281,7 +282,6 @@ div.header a:last-child {
 
 div.header div.account-buttons img {
     margin-right: 9px;
-    
 }
 
 /*
@@ -367,11 +367,17 @@ div.content div.article .info .publisher{
     vertical-align: middle;
     margin-left: 1px;
 }
+ /*
 
+    Настроенный паддинг!
+*/
 div.content div.article .border, 
 div.content div.commentary div.user{
+    margin: 0;
+    padding: 10px;
     border-radius: 1px;
     background-color: #f6f6f6;
+    
 }
 
 div.content div.article .info .publisher img {
@@ -466,12 +472,13 @@ div.content div.comments .replies span {}
 }
 
 div.content div.commentary .user {
+    margin-bottom: 100px;
     background-color: brown;
     min-height: 180px;
     height: 100px;
 }
 div.content div.commentary .user{
-    margin-top: 40px;
+    margin-top: 100px;
     padding: 14px 15px;
     height: 150px;
 }
@@ -764,9 +771,9 @@ div.content div.articles div.position-7 .info .time {
 
 div.content div.articles div.position-8 .asset {
     text-align: center;
-    margin-top: 36px;
     margin-left: -5px;
-    margin-bottom: 38px;
+    margin-top: 26px;
+    margin-bottom: 28px;
 }
 
 div.content div.articles div.position-8 > .text {
@@ -819,13 +826,9 @@ div.content div.articles div.position-bottom .info .author {
     margin-right: 32px;
 }
 
-
-
 /*
     Commentaries
 */
-
-
 div.article div.comments div.commentary .level-2{
     margin: 0;
     margin-top: 50px;
@@ -854,8 +857,8 @@ div.footer {
 div.footer div.tip {
     margin-top: 55px;
     border: 1px solid #8491bd;
-    color: #8491bd;
-    padding: 15px 0;
+
+    padding: 15px 0px;
 }
 
 div.footer div.tip img {
