@@ -6,6 +6,19 @@
     src: url('../fonts/MyriadPro-Regular.otf');
 }
 
+/*
+    Helping methods
+*/
+
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.wrap {
+    border: 1px dashed black;
+}
 
 /* 
     GENERAL 
@@ -13,7 +26,7 @@
 body {
     width: 1600px;
     background-color: white;
-    font-family: 'Lato', sans-serif;
+    font-family:'Lato', sans-serif;
     margin: 0 auto;
 }
 
@@ -32,6 +45,12 @@ a {
 /*
     FONT STYLES
 */
+
+
+/*
+    Header
+*/
+
 .font-style-header-author {
     font-size: 14px;
     font-weight: 400;
@@ -66,6 +85,81 @@ a {
     letter-spacing: 0em;
     text-transform:uppercase; 
 }
+
+/*
+    Articles
+*/
+
+.font-style-content-shower {
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+}
+
+.font-style-content-title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.font-style-content-text {
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+}
+
+.font-style-content-info {
+    font-size: 14px;
+    line-height: 32px;
+    letter-spacing: 0.03em;
+}
+
+/*
+    Commentaries
+*/
+
+.font-style-comm-stat {
+    font-size: 18px;
+    font-weight: 300;
+    color: #b2b2b2;
+    font-style: normal;
+}
+
+.font-style-comm-name {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 39px;
+}
+
+.font-style-comm-time {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 39px;
+}
+
+.font-style-comm-text,
+.font-style-comm-reply{
+    font-size: 16;
+    font-weight: 400;
+    line-height: 39px;
+}
+
+.font-style-comm-reply {
+
+}
+
+.font-style-pagination {
+    font-size: 16px;
+}
+
+.font-style-tip {
+    font
+}
+
+/*
+    /FONT STYLES
+*/
+
 /* 
     HEADER
 */
@@ -216,8 +310,6 @@ div.content .show-item span {
     margin: 23px;
 }
 
-
-
 div.content div.articles {
     margin: 0 auto;
     
@@ -231,12 +323,6 @@ div.footer{
     padding: 0 400px;
 }
 
-
-div.content div.article {
-    
-    margin-bottom: 115px;
-}
-
 div.content div.article .title p{
     margin: 0;
     margin-bottom: 20px;
@@ -244,12 +330,12 @@ div.content div.article .title p{
 
 div.content div.article .asset,
 div.content div.article .three-assets {
-    text-align: center;
     margin-bottom: 30px;
     
 }
 
 div.content div.article .asset img {
+    margin-top: 5px;
     border-radius: 3px;
     padding: 0px;
 }
@@ -267,23 +353,19 @@ div.content div.article .three-assets img:last-child {
 
 div.content div.article .text p{
     margin: 0;
-    margin-bottom: 27px;
 }
 
 div.content div.article div.info {
-    height: 23px;
 }
 
 div.content div.article div.buttons div,
 div.content div.article .info .publisher {
     display: inline-block;
-    float: left;
 }
 
 div.content div.article .info .publisher{
     vertical-align: middle;
     margin-left: 1px;
-    margin-right: 50px;
 }
 
 div.content div.article .border, 
@@ -309,20 +391,9 @@ div.content div.article div.buttons{
     color: #828282;
 }
 
-div.content div.article div.buttons div{
-    margin-left: 20px;
-}
-
- div.content div.article .info span {
-    margin-right: 10px;
-    
-}
 
 div.content div.article div.buttons span.likes-dislikes {
     margin: 0 4px;
-}
-
-div.content div.article div.buttons a {
 }
 
 
@@ -330,20 +401,20 @@ div.content div.article div.buttons div:first-child {
     margin-left: 0;
 }
 
-div.content div.comments {
-}
+
 
 div.content div.comments div.commentary {
     position: static;
-    margin-top: 55px;
+    margin-top: 63px;
 }
 
 div.content div.comments div.avatar {
     display: inline-block;
-    margin-right: 21px;
-    margin-left: -1px;
+    margin-right: 19px;
+    margin-left: -2px;
     vertical-align: top;
 }
+
 div.content div.comments div.comment-text {
     display: inline-block;
     width: 85%;
@@ -355,16 +426,17 @@ div.content div.comments div.comment-text div.name {
 div.content div.comments div.timecode,
 div.content div.comments div.name {
     display: inline-block;
-    margin-bottom: 15px;
+    margin-bottom: 4px;
 }
 
 div.content div.comments div.timecode {
-    margin-left: 15px;
+    margin-left: 14px;
     
 }
 
-div.content div.commentary div.reply {
-    margin-top: 15px;
+div.content div.commentary div.text {
+    margin-bottom: 7px;
+    line-height: 25px;
 }
 
 div.content div.commentary div.reply a{
@@ -381,31 +453,27 @@ div.content div.comments div.replies h2 {
     width: 100%; 
     text-align: center; 
     border-bottom: 1px solid #b2b2b2; 
-    line-height: 0.1em; 
+    line-height: 0em; 
     margin: 20px 0 10px;
     margin-bottom: 75px;
 
 }
 
-div.content div.comments .replies span {
-    color: #b2b2b2;
-    font-style: normal;
+
+div.content div.comments .replies span {}
     padding: 0 20px;
     background-color: white;
-}
-
-
-.clearfix {
-    display: table;
-    content: "";
-    clear: both;
-    border: 1px dashed black;
 }
 
 div.content div.commentary .user {
     background-color: brown;
     min-height: 180px;
-    padding: 10px
+    height: 100px;
+}
+div.content div.commentary .user{
+    margin-top: 40px;
+    padding: 14px 15px;
+    height: 150px;
 }
 
 div.content div.commentary .user input[type='text'] {
@@ -415,15 +483,19 @@ div.content div.commentary .user input[type='text'] {
     background-color: inherit;
     outline: none;
     border: none;
+    font-size: 16px;
 }
 
 div.content div.pagination {
-    margin-top: 38px;
-    text-align: center;
+    
+    margin-top: 35px;
+    margin-left: 293px;
 }
 
 div.content div.pagination a {
-    padding: 0 12px;
+    margin: 0;
+    padding: 0 9px;
+    
 }
 
 div.content div.pagination a:hover {
@@ -431,6 +503,7 @@ div.content div.pagination a:hover {
 }
 
 div.content div.pagination a.active {
+    font-weight: bold;
 }
 
 div.content div.article p.special {
@@ -441,6 +514,334 @@ div.content div.article div.info div.open {
     text-align: right;
 }
 
+/*
+    Articles position
+*/
+
+/*
+    Article #1
+*/
+
+.position-1 {
+    margin-top: 39px;
+    margin-bottom: 110px;
+}
+
+div.content div.articles div.position-1 .info {
+    margin-top: 22px;
+    margin-left: -1px;
+}
+
+div.content div.articles div.position-1 .info .author {
+    margin-left: -2px;
+    margin-right: 38px;
+}
+
+div.content div.articles div.position-1 .info .time {
+    margin-right: 26px;
+}
+
+
+/*
+    Article #2
+*/
+
+.position-2 {
+    margin-bottom: 82px;
+}
+
+div.content div.articles div.position-2 .info {
+    margin-top: 23px;
+    margin-left: -2px;
+}
+
+div.content div.articles div.position-2 .info .author {
+    margin-left: -3px;
+    margin-right: 18px;
+}
+
+div.content div.articles div.position-2 .info .time {
+    margin-right: 20px;
+}
+
+/*
+    Article-3
+*/
+
+.position-3 {
+    margin-bottom: 74px;
+}
+
+div.content div.articles div.position-3 .asset {
+    margin-bottom: 25px;
+}
+
+div.content div.articles div.position-3 .info {
+    margin-top: 19px;
+    margin-left: -2px;
+}
+
+div.content div.articles div.position-3 .info .author {
+    margin-left: -4px;
+    margin-right: 24px;
+}
+
+div.content div.articles div.position-3 .info .time {
+    margin-right: 24px;
+}
+
+/*
+    Article-4
+*/
+
+.position-4 {
+    margin-bottom: 84px;
+}
+
+div.content div.articles div.position-4 > .text {
+    margin-top: -3px;
+    margin-bottom: 31px;
+}
+
+div.content div.articles div.position-4 div.three-assets {
+    margin-bottom: 1px;
+}
+
+div.content div.articles div.position-4 div.three-assets img {
+    margin-right: 12px;
+}
+
+
+div.content div.articles div.position-4 div.three-assets img:last-child {
+    margin-left: 3px;
+    margin-right: -1px;
+}
+
+
+div.content div.articles div.position-4 .info {
+    margin-top: 19px;
+    margin-left: -2px;
+}
+
+div.content div.articles div.position-4 .info .author {
+    margin-left: -4px;
+    margin-right: 34px;
+}
+
+div.content div.articles div.position-4 .info .time {
+    margin-right: 24px;
+}
+
+/*
+    Article-5
+*/
+
+.position-5 {
+    margin-bottom: 77px;
+}
+
+div.content div.articles div.position-5 .info {
+    margin-top: 21px;
+    margin-left: -2px;
+    min-height: 30px;
+}
+
+div.content div.articles div.position-5 .info .author {
+    margin-left: -4px;
+    margin-right: 30px;
+}
+
+div.content div.articles div.position-5 .info .time {
+    margin-right: 20px;
+}
+
+div.content div.articles div.position-5 .info .publisher {
+    float: left;
+    margin-right: 30px;
+}
+
+div.content div.articles div.position-5 .info .buttons {
+    float: left;
+}
+
+div.content div.articles div.position-5 .info .buttons span{
+    margin-right: 9px;
+    font-weight: bolder;
+    color: aqua;
+    margin-left: -5px;
+}
+
+div.content div.articles div.position-5 .info .buttons div.likes-block{
+    margin-right: 10px;
+}
+
+div.content div.articles div.position-5 .info .buttons div.likes-block img {
+     margin-right: 10px;
+}
+
+div.content div.articles div.position-5 .info .buttons img {
+   margin-right: 4px;
+}
+
+div.content div.articles div.position-5 .info .buttons div:nth-child(2) {
+    margin-right: 10px; 
+}
+
+div.content div.articles div.position-5 .info .buttons div:nth-child(3) {
+    margin-right: 11px;
+}
+
+
+
+
+div.content div.articles div.position-5 .info .buttons div:last-child {
+    margin-left: 7px;
+    padding: 0;
+}
+
+
+/*
+    Article-6
+*/
+
+.position-6 {
+    margin-top: 39px;
+    margin-bottom: 73px;
+}
+
+div.content div.articles div.position-6 .asset {
+    text-align: center;
+    margin-top: 22px;
+    margin-left: -5px;
+}
+
+div.content div.articles div.position-6 .info .author {
+    margin-left: -3px;
+    margin-right: 31px;
+}
+
+div.content div.articles div.position-6 .info .time {
+    margin-right: 26px;
+}
+
+/*
+    Article-7
+*/
+
+.position-7 {
+    margin-top: 39px;
+    margin-bottom: 78px;
+}
+
+div.content div.articles div.position-7 .asset {
+    text-align: center;
+    margin-top: 22px;
+    margin-left: -5px;
+}
+
+div.content div.articles div.position-7 > .text {
+    margin-bottom: 26px;
+}
+
+div.content div.articles div.position-7 .info .author {
+    margin-left: -3px;
+    margin-right: 40px;
+}
+
+div.content div.articles div.position-7 .info .time {
+    margin-right: 42px;
+}
+
+
+/*
+    Article-8
+*/
+
+.position-8 {
+    margin-top: 39px;
+    margin-bottom: 78px;
+}
+
+div.content div.articles div.position-8 .asset {
+    text-align: center;
+    margin-top: 36px;
+    margin-left: -5px;
+    margin-bottom: 38px;
+}
+
+div.content div.articles div.position-8 > .text {
+    margin-bottom: 20px;
+}
+
+div.content div.articles div.position-8 .info .author {
+    margin-left: -3px;
+    margin-right: 40px;
+}
+
+div.content div.articles div.position-8 .info .time {
+    margin-right: 42px;
+}
+
+
+div.content div.articles div.position-8 h2 {
+    margin-top: 63px;
+}
+
+div.content div.articles div.position-8 h2 > span { 
+    vertical-align: middle;
+    margin-right: 18px;
+    background-color: white;
+}
+
+
+/*
+    Article bottom
+*/
+
+.position-8 {
+    margin-top: 0px;
+    margin-bottom: 78px;
+}
+
+div.content div.articles div.position-bottom .asset {
+    text-align: center;
+    margin-top: 36px;
+    margin-left: -5px;
+    margin-bottom: 38px;
+}
+
+div.content div.articles div.position-bottom > .asset {
+    margin-bottom: 37px;
+}
+
+div.content div.articles div.position-bottom .info .author {
+    margin-left: -3px;
+    margin-right: 32px;
+}
+
+
+
+/*
+    Commentaries
+*/
+
+
+div.article div.comments div.commentary .level-2{
+    margin: 0;
+    margin-top: 50px;
+}
+
+div.article div.comments div.commentary .level-2 .reply {
+    margin-top: -3px;
+}
+
+div.article div.comments div.commentary .level-2:last-child{
+    margin-top: 45px;
+}
+
+div.article div.comments div.commentary .level-2 .reply {
+    margin-top: -3px;
+}
 
 /* 
     Footer
@@ -451,13 +852,14 @@ div.footer {
 }
 
 div.footer div.tip {
+    margin-top: 55px;
     border: 1px solid #8491bd;
     color: #8491bd;
-    text-align: center;
     padding: 15px 0;
 }
 
 div.footer div.tip img {
+    margin-left: 294px;
     vertical-align: middle;
     margin-right: 10px;
 }
