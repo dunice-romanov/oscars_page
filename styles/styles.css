@@ -1,6 +1,18 @@
+/* 
+    FONTS 
+*/
+@font-face {
+    font-family: MyriadPro-Regular;
+    src: url('../fonts/MyriadPro-Regular.otf');
+}
+
+
+/* 
+    GENERAL 
+*/
 body {
     width: 1600px;
-    background-color: cyan;
+    background-color: white;
     font-family: 'Lato', sans-serif;
     margin: 0 auto;
 }
@@ -16,6 +28,47 @@ a {
 .margin-right {
     margin-left: 0px;
 }
+
+/*
+    FONT STYLES
+*/
+.font-style-header-author {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.font-style-header-title {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+}
+
+.font-style-header-text {
+    font-size: 30px;
+    font-weight: lighter;
+    line-height: 42px;
+    letter-spacing: -0.005em;
+}
+
+.font-style-header-account {
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 42px;
+    letter-spacing: em;
+}
+
+.font-style-header-button {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-transform:uppercase; 
+}
+/* 
+    HEADER
+*/
 div.header {
     margin: 0 auto;
     background: beige url('../assets/header/headers-oscar-guy.jpg');
@@ -32,11 +85,10 @@ div.header div.info {
 }
 
 div.header div.author {
-    margin-top: 25px;
+    margin-top: 17px;
     margin-right: 300px;
     float: right;
     color: white;
-    font-size: 14px;
 }
 
 div.header div.author a {
@@ -52,19 +104,14 @@ div.header .ui {
     padding: 0px 300px;
 }
 
-div.header .title {
-    padding-top: 5px;
-    font-weight: bold;
-    font-size: 60px;
-    letter-spacing: -1px;
+div.header div.info div.title {
+    padding-top: 25px;
+    height: 50px;
 }
 
 div.header .text {
-    font-weight: lighter;
-    word-spacing: 2px;
-    line-height: 2.5em;
-    margin-left: 10px;
-    margin-bottom: 20px;
+    margin-left: 9px;
+    height: 90px;
 }
 
 div.header .title p {
@@ -77,11 +124,9 @@ div.header .text p {
     width: 780px;
     padding: 0;
     margin: 0;
-    font-size: 30px;
 }
 
 div.header .account-info {
-    font-weight: lighter;
     float: left;
     vertical-align: middle;
     margin-left: 7px;
@@ -99,17 +144,15 @@ div.header .account-info img {
 }
 
 div.header .account-info span {
-    letter-spacing: 0;
     margin-left: 10px;
-    word-spacing: 2px;
 }
 
 div.header .account-info span:last-child {
-    padding-left: 10px;
+    padding-left: 0px;
     
 }
 div.header .account-info span:last-child {
-    margin-left: 30px;
+    margin-left: 35px;
 }
 
 
@@ -120,6 +163,10 @@ div.header a {
 }
 
 
+div.header div.account-buttons {
+    margin-top: 3px;
+}
+
 div.header div.account-buttons span, 
 div.header div.account-buttons img {
     margin-top: 2px;
@@ -127,7 +174,6 @@ div.header div.account-buttons img {
 }
 
 div.header a span {
-    font-size: 14px;
     color: white;
     margin-left: 0px;
 }
@@ -136,7 +182,7 @@ div.header div.account-buttons a:first-child {
     margin-left: 270px;
 }
 div.header a:last-child {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 
 div.header div.account-buttons img {
@@ -167,18 +213,24 @@ div.content .show-item {
 div.content .show-item span {
     text-transform: uppercase;
     color: #7394a7;
-    word-spacing: -1px;
-    font-size: 16px;
     margin: 23px;
 }
 
+
+
 div.content div.articles {
     margin: 0 auto;
-    padding: 0 400px;
+    
     color: black;
     background-color: white;
     padding-top: 40px;
 }
+
+div.content div.articles,
+div.footer{
+    padding: 0 400px;
+}
+
 
 div.content div.article {
     
@@ -187,8 +239,6 @@ div.content div.article {
 
 div.content div.article .title p{
     margin: 0;
-    font-size: 24px;
-    font-weight: bold;
     margin-bottom: 20px;
 }
 
@@ -217,10 +267,7 @@ div.content div.article .three-assets img:last-child {
 
 div.content div.article .text p{
     margin: 0;
-    font-size: 18px;
     margin-bottom: 27px;
-    line-height: 30px;
-    word-spacing: 1px;
 }
 
 div.content div.article div.info {
@@ -239,7 +286,8 @@ div.content div.article .info .publisher{
     margin-right: 50px;
 }
 
-div.content div.article .border {
+div.content div.article .border, 
+div.content div.commentary div.user{
     border-radius: 1px;
     background-color: #f6f6f6;
 }
@@ -275,7 +323,6 @@ div.content div.article div.buttons span.likes-dislikes {
 }
 
 div.content div.article div.buttons a {
-    font-size: 14px;
 }
 
 
@@ -288,7 +335,7 @@ div.content div.comments {
 
 div.content div.comments div.commentary {
     position: static;
-    margin-bottom: 65px;
+    margin-top: 55px;
 }
 
 div.content div.comments div.avatar {
@@ -303,12 +350,12 @@ div.content div.comments div.comment-text {
 }
 
 div.content div.comments div.comment-text div.name {
-    font-weight: bold;
 }
 
 div.content div.comments div.timecode,
 div.content div.comments div.name {
     display: inline-block;
+    margin-bottom: 15px;
 }
 
 div.content div.comments div.timecode {
@@ -316,12 +363,16 @@ div.content div.comments div.timecode {
     
 }
 
+div.content div.commentary div.reply {
+    margin-top: 15px;
+}
+
 div.content div.commentary div.reply a{
     color: #0d50a7;
 }
 
+
 div.content div.commentary div.timecode {
-    font-size: 14px;
     color: #90919d;
 }
 
@@ -341,8 +392,6 @@ div.content div.comments .replies span {
     font-style: normal;
     padding: 0 20px;
     background-color: white;
-    font-weight: lighter;
-    font-size: 18px;
 }
 
 
@@ -351,4 +400,69 @@ div.content div.comments .replies span {
     content: "";
     clear: both;
     border: 1px dashed black;
+}
+
+div.content div.commentary .user {
+    background-color: brown;
+    min-height: 180px;
+    padding: 10px
+}
+
+div.content div.commentary .user input[type='text'] {
+    font-family: 'MyriadPro-Regular';
+    width: 100%;
+    color: #9d999c;
+    background-color: inherit;
+    outline: none;
+    border: none;
+}
+
+div.content div.pagination {
+    margin-top: 38px;
+    text-align: center;
+}
+
+div.content div.pagination a {
+    padding: 0 12px;
+}
+
+div.content div.pagination a:hover {
+    color: deepskyblue;
+}
+
+div.content div.pagination a.active {
+}
+
+div.content div.article p.special {
+    font-size: 18px;
+}
+
+div.content div.article div.info div.open {
+    text-align: right;
+}
+
+
+/* 
+    Footer
+*/
+
+div.footer {
+    height: 571px;
+}
+
+div.footer div.tip {
+    border: 1px solid #8491bd;
+    color: #8491bd;
+    text-align: center;
+    padding: 15px 0;
+}
+
+div.footer div.tip img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+div.footer div.tip span {
+    text-transform: uppercase;
+    vertical-align: middle;
 }
