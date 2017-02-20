@@ -66,9 +66,9 @@ a {
 
 .font-style-header-text {
     font-size: 30px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 42px;
-    letter-spacing: 0.01em;
+    letter-spacing: -0.01em;
 }
 
 .font-style-header-account {
@@ -178,7 +178,7 @@ div.header {
 
 div.header div.info {
     color: white;
-    background: rgba(73,72,68,0.5);
+    background: rgba(255,255,255,0.2);
     position: relative;
     height: 211px;
     top: 352px;
@@ -206,7 +206,7 @@ div.header .ui {
 
 div.header div.info div.title {
     padding-top: 25px;
-    height: 50px;
+    height: 51px;
 }
 
 div.header .text {
@@ -279,7 +279,7 @@ div.header a span {
 }
 
 div.header div.account-buttons a:first-child {
-    margin-left: 275px;
+    margin-left: 262px;
 }
 div.header a:last-child {
     margin-left: 25px;
@@ -363,12 +363,12 @@ div.content div.article div.info {
 
 div.content div.article div.buttons div,
 div.content div.article .info .publisher {
-    display: inline-block;
 }
 
 div.content div.article .info .publisher{
     vertical-align: middle;
     margin-left: 1px;
+    display: inline-block;
 }
 
 div.content div.article .border, 
@@ -400,6 +400,7 @@ div.content div.article div.buttons{
 
 
 div.content div.article div.buttons span.likes-dislikes {
+    color: #2b8e04;
     margin: 0 4px;
 }
 
@@ -516,8 +517,8 @@ div.content div.pagination a.active {
 
 
 
-div.content div.article div.info div.open {
-    display: inline-block;
+div.content div.article  div.open {
+    padding-top: 9px;
     float: right;
 }
 
@@ -664,11 +665,16 @@ div.content div.articles div.position-5 .info .time {
 
 div.content div.articles div.position-5 .info .publisher {
     float: left;
-    margin-right: 30px;
+    margin-right: 31px;
 }
 
 div.content div.articles div.position-5 .info .buttons {
+    padding-top: 1px;
     float: left;
+}
+
+div.content div.articles div.position-5 .info .buttons div {
+    display: inline-block;
 }
 
 div.content div.articles div.position-5 .info .buttons span{
@@ -831,7 +837,9 @@ div.content div.articles div.position-bottom .info .author {
     margin-right: 32px;
 }
 
-
+div.content div.articles div.position-bottom .info .open {
+    padding-top: 0px;
+}
 
 /*
     Commentaries
@@ -860,7 +868,7 @@ div.footer {
 }
 
 div.footer div.tip {
-    margin-top: 87px;
+    margin-top: 89px;
     border: 1px solid #8491bd;
     color: #8491bd;
     padding: 15px 0;
