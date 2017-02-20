@@ -659,18 +659,14 @@ div.content div.articles div.position-5 .info .author {
     margin-right: 30px;
 }
 
-div.content div.articles div.position-5 .info .time {
-    margin-right: 20px;
-}
 
 div.content div.articles div.position-5 .info .publisher {
     float: left;
-    margin-right: 31px;
 }
 
 div.content div.articles div.position-5 .info .buttons {
-    padding-top: 1px;
-    float: left;
+    padding-top: 2px;
+    float: right;
 }
 
 div.content div.articles div.position-5 .info .buttons div {
@@ -681,7 +677,7 @@ div.content div.articles div.position-5 .info .buttons span{
     margin-right: 9px;
     font-weight: bolder;
     color: aqua;
-    margin-left: -5px;
+    margin-left: 0px;
 }
 
 div.content div.articles div.position-5 .info .buttons div.likes-block{
@@ -689,7 +685,7 @@ div.content div.articles div.position-5 .info .buttons div.likes-block{
 }
 
 div.content div.articles div.position-5 .info .buttons div.likes-block img {
-     margin-right: 10px;
+     margin-right: 9px;
 }
 
 div.content div.articles div.position-5 .info .buttons img {
@@ -708,7 +704,7 @@ div.content div.articles div.position-5 .info .buttons div:nth-child(3) {
 
 
 div.content div.articles div.position-5 .info .buttons div:last-child {
-    margin-left: 7px;
+    margin-left: 5px;
     padding: 0;
 }
 
